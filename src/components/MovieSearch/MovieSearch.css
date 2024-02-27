@@ -1,0 +1,51 @@
+.form-container {
+  max-width: 960px;
+  margin: 30px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-wrapper {
+  position: relative;
+  display: flex;
+  width: 50%;
+  transition: width 0.2s ease;
+}
+
+.form-wrapper:focus-within {
+  width: 75%;
+}
+
+.form-input {
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  width: 100%;
+  background: #343551;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.form-input::placeholder {
+  color: #ccc;
+  font-size: 1rem;
+}
+
+.search-icon-container {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+}
+
+.search-icon {
+  color: #ccc;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.form-wrapper:focus-within .search-icon {
+  color: #fff;
+}
